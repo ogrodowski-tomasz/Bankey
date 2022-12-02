@@ -21,6 +21,7 @@
 		1E9D5D68293940EA00FF1042 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D5D67293940EA00FF1042 /* LocalState.swift */; };
 		1E9D5D6A2939468800FF1042 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D5D692939468800FF1042 /* UIViewController+Utils.swift */; };
 		1E9D5D6C293947FE00FF1042 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D5D6B293947FE00FF1042 /* MainViewController.swift */; };
+		1ED6C5C7293A19DB00373448 /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED6C5C6293A19DB00373448 /* AccountSummaryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		1E9D5D67293940EA00FF1042 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		1E9D5D692939468800FF1042 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		1E9D5D6B293947FE00FF1042 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1ED6C5C6293A19DB00373448 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				1E5B6162293A0A5E008FFE84 /* AccountSummaryViewController.swift */,
-				1E5B6164293A0D44008FFE84 /* AccountSummaryHeaderView.swift */,
-				1E5B6166293A0D73008FFE84 /* AccountSummaryHeaderView.xib */,
+				1ED6C5C4293A198E00373448 /* Header */,
+				1ED6C5C5293A19B100373448 /* Cells */,
 			);
 			name = AccountSummary;
 			sourceTree = "<group>";
@@ -129,6 +131,23 @@
 				1E9D5D692939468800FF1042 /* UIViewController+Utils.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		1ED6C5C4293A198E00373448 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				1E5B6166293A0D73008FFE84 /* AccountSummaryHeaderView.xib */,
+				1E5B6164293A0D44008FFE84 /* AccountSummaryHeaderView.swift */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		1ED6C5C5293A19B100373448 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1ED6C5C6293A19DB00373448 /* AccountSummaryCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +227,7 @@
 				1E5B6165293A0D44008FFE84 /* AccountSummaryHeaderView.swift in Sources */,
 				1E9D5D6529393CB500FF1042 /* DummyViewController.swift in Sources */,
 				1E4EE3852937809C00FEBEC1 /* LoginViewController.swift in Sources */,
+				1ED6C5C7293A19DB00373448 /* AccountSummaryCell.swift in Sources */,
 				1E9D5D6329391E9D00FF1042 /* OnboardingViewController.swift in Sources */,
 				1E9D5D6C293947FE00FF1042 /* MainViewController.swift in Sources */,
 				1E5B6163293A0A5E008FFE84 /* AccountSummaryViewController.swift in Sources */,
