@@ -97,6 +97,14 @@
 			name = Components;
 			sourceTree = "<group>";
 		};
+		1E46F6002948EBFF00BEFAC9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1E9B046329475FFA00A92F63 /* CurrencyFormatterTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		1E4EE3742937809C00FEBEC1 = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +172,7 @@
 		1E9B045B29475F8800A92F63 /* BankeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				1E9B046329475FFA00A92F63 /* CurrencyFormatterTests.swift */,
+				1E46F6002948EBFF00BEFAC9 /* Utils */,
 			);
 			path = BankeyUnitTests;
 			sourceTree = "<group>";
