@@ -29,6 +29,8 @@
 		1E9D5D68293940EA00FF1042 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D5D67293940EA00FF1042 /* LocalState.swift */; };
 		1E9D5D6A2939468800FF1042 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D5D692939468800FF1042 /* UIViewController+Utils.swift */; };
 		1E9D5D6C293947FE00FF1042 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D5D6B293947FE00FF1042 /* MainViewController.swift */; };
+		1EBB726E294928600030E6D1 /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB726D294928600030E6D1 /* SkeletonLoadable.swift */; };
+		1EBB727029492A3F0030E6D1 /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB726F29492A3F0030E6D1 /* SkeletonCell.swift */; };
 		1ED6C5C7293A19DB00373448 /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED6C5C6293A19DB00373448 /* AccountSummaryCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		1E9D5D67293940EA00FF1042 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		1E9D5D692939468800FF1042 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		1E9D5D6B293947FE00FF1042 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1EBB726D294928600030E6D1 /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
+		1EBB726F29492A3F0030E6D1 /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		1ED6C5C6293A19DB00373448 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				1ED6C5C6293A19DB00373448 /* AccountSummaryCell.swift */,
+				1EBB726D294928600030E6D1 /* SkeletonLoadable.swift */,
+				1EBB726F29492A3F0030E6D1 /* SkeletonCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -320,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E9D5D6A2939468800FF1042 /* UIViewController+Utils.swift in Sources */,
+				1EBB727029492A3F0030E6D1 /* SkeletonCell.swift in Sources */,
 				1E46F5FD2948E32500BEFAC9 /* Date+Utils.swift in Sources */,
 				1E46F5FB2948CBA300BEFAC9 /* ShakyBellView.swift in Sources */,
 				1E4EE3972937837500FEBEC1 /* LoginView.swift in Sources */,
@@ -337,6 +344,7 @@
 				1E5B6163293A0A5E008FFE84 /* AccountSummaryViewController.swift in Sources */,
 				1E4EE3812937809C00FEBEC1 /* AppDelegate.swift in Sources */,
 				1E9D5D61293916FB00FF1042 /* OnboardingContainerViewController.swift in Sources */,
+				1EBB726E294928600030E6D1 /* SkeletonLoadable.swift in Sources */,
 				1E46F5FF2948E41900BEFAC9 /* AccountSummaryViewController+Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
