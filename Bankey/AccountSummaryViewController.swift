@@ -141,7 +141,7 @@ extension AccountSummaryViewController {
             case .success(let profile):
                 self.profile = profile
             case .failure(let error):
-                print(error.localizedDescription)
+                self.displayError(error)
             }
             group.leave()
         }
@@ -152,7 +152,7 @@ extension AccountSummaryViewController {
             case .success(let accounts):
                 self.accounts = accounts
             case .failure(let error):
-                print(error.localizedDescription)
+                self.displayError(error)
             }
             group.leave()
         }
@@ -165,7 +165,7 @@ extension AccountSummaryViewController {
             self.isLoaded = true
             self.configureTableHeaderView(with: profile)
             self.configureTableCells(with: self.accounts)
-
+            
             self.tableView.reloadData()
             
         }
@@ -180,6 +180,26 @@ extension AccountSummaryViewController {
         accountCellViewModels = accounts.map({ account in
             AccountSummaryCell.ViewModel(accountType: account.type, accountName: account.name, balance: account.amount)
         })
+    }
+    
+    private func displayError(_ error: NetworkingError) {
+        let title: String
+        let message: String
+        switch error {
+        case .serverError:
+            title = "Server Error"
+            message = "Ensure you are connected to the internet. Please try again."
+        case .decodingError:
+            title = "Decoding Error"
+            message = "We could not proccess your request. Please try again."
+        }
+        self.showErrorAlert(title: title, message: message)
+    }
+    
+    private func showErrorAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
     }
 }
 
